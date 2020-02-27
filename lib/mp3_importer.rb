@@ -7,7 +7,7 @@ class MP3Importer
   
   def files 
     Dir.glob("*.mp3") do |file|
-      puts @path 
+      @path 
     end
   end
   
