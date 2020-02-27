@@ -7,7 +7,7 @@ class MP3Importer
   
   def files 
     @files = Dir.entries(@path)
-    @files.reject {|file| file[-1] != "3"}
+    @files.reject {|file| file != "*.mp3"}
   end
   
   def import
