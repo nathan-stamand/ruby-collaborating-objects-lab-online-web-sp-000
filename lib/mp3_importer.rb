@@ -6,7 +6,9 @@ class MP3Importer
   end
   
   def files 
-    Dir.glob("*.mp3")
+    Dir.glob("*.mp3") do |file|
+      puts file 
+    end
   end
   
   def import
